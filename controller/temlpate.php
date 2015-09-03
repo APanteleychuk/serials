@@ -11,6 +11,6 @@ class Template {
   }
 
   function get_footer() {
-    include_once
+
   }
 }

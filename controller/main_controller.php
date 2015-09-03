@@ -3,8 +3,7 @@
 class Main_controller {
 
   function index() {
-
-      include('view/index.php');
+    include('view/index.php');
 
   }
 
