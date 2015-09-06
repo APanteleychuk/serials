@@ -9,16 +9,13 @@
 </head>
 
 <body>
-  <form action="<?php echo HOME_URL?>/index.php?action=login" method="post">
-    <input type="text" name="login"/>
-    <input type="password" name="password"/>
-    <input type="submit" value="login"/>
-
-
-  </form>
-  <?php if (isset($_REQUEST['login']) && $_REQUEST['login']=='error') :?>
-      <span> Login/password error</span>
-  <?php endif?>
+  <ul>
+    <li>Serial</li>
+    <li>Serial</li>
+    <li>Serial</li>
+    <li>Serial</li>
+    <a href="<?php $HOME_URL?>/index.php?action=add_serial_view">add serial</a>
+  </ul>
 </body>
 
 </html>

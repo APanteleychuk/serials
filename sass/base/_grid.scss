@@ -1,0 +1,7 @@
+body {
+  @include container($columns-mob);
+
+  @include susy-breakpoint($screen-tab-land-min) {
+    @include container($columns-desk);
+  }
+}

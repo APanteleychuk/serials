@@ -1,0 +1,102 @@
+ul, ol {
+  li {
+    color: $grey;
+  }
+}
+
+
+ul:not([class]):not([id]) {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  li {
+    list-style-type: none;
+    color: $grey;
+    text-indent: -27px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  li:before {
+    color: $baseColor;
+    content: "· ";
+    font-size:50px;
+    vertical-align:middle;
+    line-height:20px;
+  }
+}
+
+ul.links {
+  li {
+    list-style-type: none;
+    color: $grey;
+  }
+  li:before {
+    color: $baseColor;
+    content: "· ";
+    font-size:50px;
+    vertical-align:middle;
+    line-height:20px;
+  }
+}
+
+ul.breadcrumb {
+
+  font-size: 18px;
+  font-style: normal;
+
+  li:first-child:before {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+
+    &:before {
+      padding: 0 5px;
+      color: #ccc;
+      content: ">";
+    }
+
+    a {
+      color: $linkColor;
+
+      &.active {
+        color: $baseColor;
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      &:hover {
+        color: $baseColor;
+      }
+    }
+  }
+}
+
+ul.pager {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+
+  li.pager__item--current{
+    color: $baseColor;
+  }
+  .pager__item--next, .pager__item--last{
+    float: right;
+  }
+  li{
+    padding-right: 25px;
+    float: left;
+    list-style: none;
+  }
+  li.pager-last, li.pager-next{
+//    float: right;
+    font-family: LoraItalic;
+  }
+  li.pager-current{
+    color: $baseColor;
+  }
+  li.pager-first, li.pager-previous{
+    font-family: LoraItalic;
+  }
+}

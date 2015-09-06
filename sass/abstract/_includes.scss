@@ -1,0 +1,5 @@
+$theme_path: "/sites/all/themes/pixel";
+@include font-face(LoraBold, '#{$theme_path}/fonts/Lora-Bold');
+@include font-face(LoraBoldItalic, '#{$theme_path}/fonts/Lora-BoldItalic');
+@include font-face(LoraItalic, '#{$theme_path}/fonts/Lora-Italic');
+@include font-face(LoraRegular, '#{$theme_path}/fonts/Lora-Regular');

@@ -1,0 +1,95 @@
+.entity-paragraphs-item {
+  @include clearfix;
+  padding-bottom: 60px;
+
+  .field--name-field-paragraph-heading {
+    p {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    & .content > div {
+      @include span(8 of 8);
+      @include clearfix;
+      clear: both;
+      float: none;
+
+      .paragraphs-item-paragraph-quote {
+        margin-top: 0;
+          .content {
+            @include span(last 5 of 8);
+            @include clearfix;
+            clear: both;
+            text-align: right;
+
+            .field--name-field-paragraph-quote-text {
+              text-align: left;
+            }
+          }
+        }
+      }
+    .paragraphs-items-field-paragraph-list-full {
+      margin-top: 3em;
+    }
+    .paragraphs-items-field-paragraph-list-full > .field--name-field-paragraph-list > .field__items > .even {
+      @include span(4 of 8);
+      padding-bottom: 1em;
+      @media (max-width:$screen-mob-land-max){
+        @include span(8 of 8);
+      }
+    }
+    .paragraphs-items-field-paragraph-list-full > .field--name-field-paragraph-list > .field__items > .odd {
+      @include span(last 4 of 8);
+      padding-bottom: 1em;
+      @media (max-width:$screen-mob-land-max){
+        @include span(8 of 8);
+      }
+    }
+  }
+
+  }
+.paragraphs-item-paragraph-copy-right-and-quote {
+  .entity-paragraphs-item.paragraphs-item-paragraph-quote{
+   .content {
+     @media (max-width: $screen-tab-port-max) {
+       float: left;
+
+     }
+   }
+ }
+}
+
+.paragraphs-item-paragraph-copy-left-and-quote {
+  .entity-paragraphs-item.paragraphs-item-paragraph-quote{
+    @media (max-width: $screen-tab-port-max) {
+      float: right;
+
+    }
+  }
+}
+
+.entity-paragraphs-item:last-of-type {
+  padding-bottom: 0;
+}
+
+//title paragraph
+
+.field--name-field-paragraph-heading  {
+  font-style: normal;
+  font-weight: bold;
+  color: #f06523;
+  font-size: 26px;
+  border-bottom: 4px solid;
+  padding-bottom: 0.4em;
+  padding-left: 6%;
+  margin-left: -6%;
+  width: 50%;
+  margin-bottom: 25px; //  test margin
+  @media (max-width: $screen-tab-port-max) {
+    font-size:24px;
+  }
+  @media (max-width: $screen-mob-land-max) {
+    font-size: 22px;
+  }
+}

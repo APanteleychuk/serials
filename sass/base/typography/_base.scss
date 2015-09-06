@@ -1,0 +1,77 @@
+html {
+  font-family: LoraRegular;
+  font-style: normal;
+  color: $grey;
+}
+
+h1, h2, h3 {
+  font-style: normal;
+  font-weight: bold;
+  color: $baseColor;
+}
+
+h1 {
+  font-size: 40px;
+  @media (max-width:$screen-tab-port-max) {
+    font-size: 30px;
+  }
+  @media (max-width: $screen-mob-land-max) {
+    font-size: 26px;
+  }
+
+    padding-bottom: 1%;
+
+}
+
+
+
+h2 {
+  font-size: 30px;
+  @media (max-width: $screen-tab-port-max) {
+    font-size:26px;
+  }
+  @media (max-width: $screen-mob-land-max) {
+    font-size:24px;
+
+  }
+}
+
+h3 {
+  font-size: 26px;
+  @media (max-width: $screen-tab-port-max) {
+    font-size:24px;
+  }
+  @media (max-width: $screen-mob-land-max) {
+    font-size: 22px;
+  }
+}
+
+a {
+  color: $baseColor;
+  text-decoration: none;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+p {
+  font-size: 15px;
+  color: $grey;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid $baseColor;
+}
+
+.first-word {
+  font-family: LoraItalic;
+  font-weight: normal;
+}
+
+strong, b {
+  font-family: "LoraBold";
+}

@@ -1,0 +1,77 @@
+$debug-grid: hide !default;
+//$debug-grid: show !default;
+
+//Breakpoints
+$screen-mob-port-max: 320px;
+
+$screen-mob-land-min: $screen-mob-port-max + 1px;
+$screen-mob-land-max: 480px;
+
+$screen-tab-port-min: $screen-mob-land-max + 1px;
+$screen-tab-port-max: 767px;
+
+$screen-tab-land-min: $screen-tab-port-max + 1px;
+
+$screen-400: 400px;
+$screen-570: 570px;
+$screen-700: 700px;
+$screen-400: 400px;
+$screen-880: 880px;
+$screen-970: 970px;
+
+//Containers
+$container-mob: 375px;
+$container-tab: auto;
+$container-desk: 860px;
+
+//Columns
+$columns-mob: 8;
+$columns-tab: 16;
+$columns-desk: 16;
+
+//Gutters
+$gutters-mob: 1/4;
+$gutters-tab: 1/3;
+$gutters-desk: 1/3;
+
+//Grid paddings
+$grid-padding-default: 10px;
+$grid-padding-mob: 12px;
+$grid-padding-tab: 10px;
+$grid-padding-desk: 6.25%;
+
+//Override default Susy settings
+$susy: (
+        columns: $columns-mob,
+        gutters: 1/3,
+        gutter-position: after,
+        global-box-sizing: border-box,
+        last-flow: from,
+        debug: (
+                image: hide,
+                color: rgba(#66f, .25),
+                output: background,
+                toggle: top right,
+        ),
+        use-custom: (
+                background-image: true,
+                background-options: false,
+                box-sizing: true,
+                clearfix: false,
+                rem: true,
+        )
+);
+
+//12 column grid. It can be helpful for inner containers.
+$grid-4: 4 1/4 $debug-grid;
+$grid-12: 12 1/3 $debug-grid;
+$grid-16: 16 1/2 $debug-grid;
+
+//Grids settings.
+//container, columns, gutters, debug-grid.
+$grid-mob: $container-mob $columns-mob $gutters-mob $debug-grid;
+$grid-tab: $container-tab $columns-tab $gutters-tab $debug-grid;
+$grid-desk: $container-desk $columns-desk $gutters-desk $debug-grid;
+
+//vertical spacing between elements
+$grid-vertical-spacing: 40px;

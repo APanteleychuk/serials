@@ -9,15 +9,18 @@
 </head>
 
 <body>
-  <form action="<?php echo HOME_URL?>/index.php?action=login" method="post">
-    <input type="text" name="login"/>
-    <input type="password" name="password"/>
-    <input type="submit" value="login"/>
+  <span>FORMA</span>
+  <form action="<?php echo HOME_URL?>/index.php?action=add_serial" method="post">
+    <input type="text" name="title"/>
+    </br>
+    <textarea name="description"> </textarea>
+    </br>
+    <input type="submit" value="add"/>
 
 
   </form>
-  <?php if (isset($_REQUEST['login']) && $_REQUEST['login']=='error') :?>
-      <span> Login/password error</span>
+  <?php if (isset($_REQUEST['add_serial']) && $_REQUEST['add_serial']=='add_error') :?>
+    <span> Serial error</span>
   <?php endif?>
 </body>
 

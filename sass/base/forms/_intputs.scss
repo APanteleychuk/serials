@@ -1,0 +1,22 @@
+input[type='password'], input[type='text'] {
+  border: solid 1px $baseColor;
+  padding: 15px;
+  font-size: 20px;
+  font-family: 'LoraRegular';
+  font-style: italic;
+}
+
+textarea {
+  border: solid 1px #f06523;
+}
+
+/* Animated throbber */
+html.js input.form-autocomplete {
+  background-image: url(../../../../../misc/throbber-inactive.png);
+  background-position: 100% center; /* LTR */
+  background-repeat: no-repeat;
+}
+html.js input.throbbing {
+  background-image: url(../../../../../misc/throbber-active.gif);
+  background-position: 100% center; /* LTR */
+}
