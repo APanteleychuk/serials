@@ -8,14 +8,22 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
+
 <body>
-  <ul>
-    <li>Serial</li>
-    <li>Serial</li>
-    <li>Serial</li>
-    <li>Serial</li>
-    <a href="<?php $HOME_URL?>/index.php?action=add_serial_view">add serial</a>
-  </ul>
+  <span><a href="<?php echo HOME_URL?>/index.php?action=add_serial_view">Add serial</a></span>
+  <div id="serials">
+
+    <?php foreach($serials['data'] as $serial) :;?>
+     <div class="serial">
+         <div><h2><?php echo $serial['title']?></h2></div>
+         <div class="logo"><img src="<?php echo HOME_URL.'/uploads/logos/'.$serial['logo']?>" alt=""/></div>
+         <div class="date">Date start serial <?php echo $serial['date']?></div>
+         <div><p><?php echo $serial['description']?></p></div>
+     </div>
+    <?php endforeach;?>
+  </div>
+
+
 </body>
 
 </html>
