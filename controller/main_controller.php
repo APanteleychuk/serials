@@ -36,11 +36,14 @@ class Main_controller {
   }
 
   function add_serial() {
-    $serial=$this->db->insert('serial', array('title'=>$_POST['title'], 'description'=>$_POST['description']));
+    $this->db->insert('serial', array('title'=>$_POST['title'], 'description'=>$_POST['description']));
     if (empty($_REQUEST['title']) || empty($_REQUEST['description'])) {
       header('Location:'.HOME_URL.'/index.php?action=add_serial_view&add_serial=add_error');
     }else{
-      header('Location:'.HOME_URL.'/index.php?action=serial_list_view');
+      header('Location:'.HOME_URL.'/index.php?action=add_serial_view');
     }
+  }
+  function add_season () {
+
   }
 }

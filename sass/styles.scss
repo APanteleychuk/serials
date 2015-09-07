@@ -1,6 +1,6 @@
 // Load utility, base and components.
 @import "abstract/dependencies";
 @import "abstract/mixins";
-@import "abstract/includes";
-@import "base/forms";
-@import "base/typography";
+
+@import "layout/blocks";
+@import "base";

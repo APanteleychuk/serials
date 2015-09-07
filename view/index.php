@@ -8,14 +8,16 @@
     <link href="css/styles.css" rel="stylesheet">
   </head>
 
-  <body>
-    <header>
-      <a href="<?php echo HOME_URL?>/index.php?action=login_view">Login</a>
-    </header>
+  <body class="front">
+    <header class="header">    </header>
 
-    <main></main>
+    <main class="main">
+      <h2>
+        <a href="<?php echo HOME_URL?>/index.php?action=login_view">Login</a>
+      </h2>
+    </main>
 
-    <footer></footer>
+    <footer class="footer" ></footer>
   </body>
 
 

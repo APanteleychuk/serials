@@ -9,16 +9,24 @@
 </head>
 
 <body>
-  <span>FORMA</span>
+  <span>Add serial</span>
   <form action="<?php echo HOME_URL?>/index.php?action=add_serial" method="post">
     <input type="text" name="title"/>
     </br>
     <textarea name="description"> </textarea>
     </br>
     <input type="submit" value="add"/>
-
-
   </form>
+
+  <span>Add season</span>
+  <form action="<?php echo HOME_URL?>/index.php?action=add_serial" method="post">
+    <input type="text" name="title"/>
+    </br>
+    <textarea name="description"> </textarea>
+    </br>
+    <input type="submit" value="add"/>
+  </form>
+
   <?php if (isset($_REQUEST['add_serial']) && $_REQUEST['add_serial']=='add_error') :?>
     <span> Serial error</span>
   <?php endif?>

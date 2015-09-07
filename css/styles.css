@@ -18,73 +18,6 @@
   visibility: hidden;
 }
 
-@font-face {
-  font-family: LoraBold;
-  font-weight: normal;
-  font-style: normal;
-  src: url("/sites/all/themes/pixel/fonts/Lora-Bold.eot");
-  src: url("/sites/all/themes/pixel/fonts/Lora-Bold.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/pixel/fonts/Lora-Bold.woff") format("woff"), url("/sites/all/themes/pixel/fonts/Lora-Bold.ttf") format("truetype"), url("/sites/all/themes/pixel/fonts/Lora-Bold.svg#LoraBold") format("svg");
-}
-@font-face {
-  font-family: LoraBoldItalic;
-  font-weight: normal;
-  font-style: normal;
-  src: url("/sites/all/themes/pixel/fonts/Lora-BoldItalic.eot");
-  src: url("/sites/all/themes/pixel/fonts/Lora-BoldItalic.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/pixel/fonts/Lora-BoldItalic.woff") format("woff"), url("/sites/all/themes/pixel/fonts/Lora-BoldItalic.ttf") format("truetype"), url("/sites/all/themes/pixel/fonts/Lora-BoldItalic.svg#LoraBoldItalic") format("svg");
-}
-@font-face {
-  font-family: LoraItalic;
-  font-weight: normal;
-  font-style: normal;
-  src: url("/sites/all/themes/pixel/fonts/Lora-Italic.eot");
-  src: url("/sites/all/themes/pixel/fonts/Lora-Italic.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/pixel/fonts/Lora-Italic.woff") format("woff"), url("/sites/all/themes/pixel/fonts/Lora-Italic.ttf") format("truetype"), url("/sites/all/themes/pixel/fonts/Lora-Italic.svg#LoraItalic") format("svg");
-}
-@font-face {
-  font-family: LoraRegular;
-  font-weight: normal;
-  font-style: normal;
-  src: url("/sites/all/themes/pixel/fonts/Lora-Regular.eot");
-  src: url("/sites/all/themes/pixel/fonts/Lora-Regular.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/pixel/fonts/Lora-Regular.woff") format("woff"), url("/sites/all/themes/pixel/fonts/Lora-Regular.ttf") format("truetype"), url("/sites/all/themes/pixel/fonts/Lora-Regular.svg#LoraRegular") format("svg");
-}
-/* line 1, ../sass/base/forms/_buttons.scss */
-input[type='submit'] {
-  background-color: #f06523;
-  color: white;
-  padding: 10px 20px;
-  height: 40px;
-  border: none;
-}
-
-/* line 1, ../sass/base/forms/_intputs.scss */
-input[type='password'], input[type='text'] {
-  border: solid 1px #f06523;
-  padding: 15px;
-  font-size: 20px;
-  font-family: 'LoraRegular';
-  font-style: italic;
-}
-
-/* line 9, ../sass/base/forms/_intputs.scss */
-textarea {
-  border: solid 1px #f06523;
-}
-
-/* Animated throbber */
-/* line 14, ../sass/base/forms/_intputs.scss */
-html.js input.form-autocomplete {
-  background-image: url(../../../../../misc/throbber-inactive.png);
-  background-position: 100% center;
-  /* LTR */
-  background-repeat: no-repeat;
-}
-
-/* line 19, ../sass/base/forms/_intputs.scss */
-html.js input.throbbing {
-  background-image: url(../../../../../misc/throbber-active.gif);
-  background-position: 100% center;
-  /* LTR */
-}
-
 /* line 1, ../sass/base/typography/_base.scss */
 html {
   font-family: LoraRegular;
@@ -293,4 +226,225 @@ ul.pager li.pager-current {
 /* line 99, ../sass/base/typography/_list.scss */
 ul.pager li.pager-first, ul.pager li.pager-previous {
   font-family: LoraItalic;
+}
+
+/* line 1, ../sass/base/forms/_buttons.scss */
+input[type='submit'] {
+  background-color: #f06523;
+  color: white;
+  padding: 10px 20px;
+  height: 40px;
+  border: none;
+}
+
+/* line 1, ../sass/base/forms/_intputs.scss */
+input[type='password'], input[type='text'] {
+  border: solid 1px #f06523;
+  padding: 15px;
+  font-size: 20px;
+  font-family: 'LoraRegular';
+  font-style: italic;
+}
+
+/* line 9, ../sass/base/forms/_intputs.scss */
+textarea {
+  border: solid 1px #f06523;
+}
+
+/* Animated throbber */
+/* line 14, ../sass/base/forms/_intputs.scss */
+html.js input.form-autocomplete {
+  background-image: url(../../../../../misc/throbber-inactive.png);
+  background-position: 100% center;
+  /* LTR */
+  background-repeat: no-repeat;
+}
+
+/* line 19, ../sass/base/forms/_intputs.scss */
+html.js input.throbbing {
+  background-image: url(../../../../../misc/throbber-active.gif);
+  background-position: 100% center;
+  /* LTR */
+}
+
+/* line 1, ../sass/base/_paragraphs.scss */
+.entity-paragraphs-item {
+  padding-bottom: 60px;
+}
+/* line 2, ../sass/abstract/abstractions/_clear.scss */
+.entity-paragraphs-item:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 6, ../sass/base/_paragraphs.scss */
+.entity-paragraphs-item .field--name-field-paragraph-heading p {
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  /* line 12, ../sass/base/_paragraphs.scss */
+  .entity-paragraphs-item .content > div {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    clear: both;
+    float: none;
+  }
+  /* line 2, ../sass/abstract/abstractions/_clear.scss */
+  .entity-paragraphs-item .content > div:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  /* line 18, ../sass/base/_paragraphs.scss */
+  .entity-paragraphs-item .content > div .paragraphs-item-paragraph-quote {
+    margin-top: 0;
+  }
+  /* line 20, ../sass/base/_paragraphs.scss */
+  .entity-paragraphs-item .content > div .paragraphs-item-paragraph-quote .content {
+    width: 61.29032%;
+    float: left;
+    margin-right: 0;
+    clear: both;
+    text-align: right;
+  }
+  /* line 2, ../sass/abstract/abstractions/_clear.scss */
+  .entity-paragraphs-item .content > div .paragraphs-item-paragraph-quote .content:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  /* line 26, ../sass/base/_paragraphs.scss */
+  .entity-paragraphs-item .content > div .paragraphs-item-paragraph-quote .content .field--name-field-paragraph-quote-text {
+    text-align: left;
+  }
+  /* line 32, ../sass/base/_paragraphs.scss */
+  .entity-paragraphs-item .paragraphs-items-field-paragraph-list-full {
+    margin-top: 3em;
+  }
+  /* line 35, ../sass/base/_paragraphs.scss */
+  .entity-paragraphs-item .paragraphs-items-field-paragraph-list-full > .field--name-field-paragraph-list > .field__items > .even {
+    width: 48.3871%;
+    float: left;
+    margin-right: 3.22581%;
+    padding-bottom: 1em;
+  }
+}
+@media (max-width: 767px) and (max-width: 480px) {
+  /* line 35, ../sass/base/_paragraphs.scss */
+  .entity-paragraphs-item .paragraphs-items-field-paragraph-list-full > .field--name-field-paragraph-list > .field__items > .even {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 42, ../sass/base/_paragraphs.scss */
+  .entity-paragraphs-item .paragraphs-items-field-paragraph-list-full > .field--name-field-paragraph-list > .field__items > .odd {
+    width: 48.3871%;
+    float: left;
+    margin-right: 0;
+    padding-bottom: 1em;
+  }
+}
+@media (max-width: 767px) and (max-width: 480px) {
+  /* line 42, ../sass/base/_paragraphs.scss */
+  .entity-paragraphs-item .paragraphs-items-field-paragraph-list-full > .field--name-field-paragraph-list > .field__items > .odd {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 54, ../sass/base/_paragraphs.scss */
+  .paragraphs-item-paragraph-copy-right-and-quote .entity-paragraphs-item.paragraphs-item-paragraph-quote .content {
+    float: left;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 64, ../sass/base/_paragraphs.scss */
+  .paragraphs-item-paragraph-copy-left-and-quote .entity-paragraphs-item.paragraphs-item-paragraph-quote {
+    float: right;
+  }
+}
+
+/* line 72, ../sass/base/_paragraphs.scss */
+.entity-paragraphs-item:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 78, ../sass/base/_paragraphs.scss */
+.field--name-field-paragraph-heading {
+  font-style: normal;
+  font-weight: bold;
+  color: #f06523;
+  font-size: 26px;
+  border-bottom: 4px solid;
+  padding-bottom: 0.4em;
+  padding-left: 6%;
+  margin-left: -6%;
+  width: 50%;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  /* line 78, ../sass/base/_paragraphs.scss */
+  .field--name-field-paragraph-heading {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 78, ../sass/base/_paragraphs.scss */
+  .field--name-field-paragraph-heading {
+    font-size: 22px;
+  }
+}
+
+/* line 1, ../sass/base/_iframes.scss */
+iframe {
+  max-width: 100% !important;
+}
+
+/* line 1, ../sass/base/_grid.scss */
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../var/lib/gems/1.9.1/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/base/_grid.scss */
+  body {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../var/lib/gems/1.9.1/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+/* line 1, ../sass/base/_images.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
