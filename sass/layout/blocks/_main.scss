@@ -1,0 +1,41 @@
+.serial {
+  @include span(8 of 8);
+}
+.title{
+  margin-left: 1em;
+  h2 {
+    margin-bottom: 0;
+  }
+}
+.logo img {
+  width: 200px;
+  height: auto;
+}
+.logo {
+  float: left;
+  margin: 1em;
+}
+.description {
+  width: 65%;
+  float: left;
+  overflow: hidden;
+  margin: 1em;
+}
+.date {
+  margin: 1em;
+  clear: both;
+}
+.bottom {
+  margin: 1em;
+}
+.add {
+  display: inherit;
+  margin: 1em;
+  a{
+    font-weight: bold;
+    font-size: 22px;
+  }
+}
+.serial-list h1{
+  text-align: center;
+}

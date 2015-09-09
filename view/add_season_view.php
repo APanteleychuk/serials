@@ -14,7 +14,9 @@
   <span>Season Number</span><input type="text" name="number"/></br>
   <span>Date start <serial></serial></span><input type="date" name="date_start"/></br>
   <span>Date finish <serial></serial></span><input type="date" name="date_finish"/></br>
+  <input type="hidden" name="serial_id" value="<?php echo $_GET['serial_id']?>">
   <input type="submit" value="add"/>
+
 </form>
 
 

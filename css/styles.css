@@ -18,6 +18,70 @@
   visibility: hidden;
 }
 
+/* line 1, ../sass/layout/blocks/_main.scss */
+.serial {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 4, ../sass/layout/blocks/_main.scss */
+.title {
+  margin-left: 1em;
+}
+/* line 6, ../sass/layout/blocks/_main.scss */
+.title h2 {
+  margin-bottom: 0;
+}
+
+/* line 10, ../sass/layout/blocks/_main.scss */
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* line 14, ../sass/layout/blocks/_main.scss */
+.logo {
+  float: left;
+  margin: 1em;
+}
+
+/* line 18, ../sass/layout/blocks/_main.scss */
+.description {
+  width: 65%;
+  float: left;
+  overflow: hidden;
+  margin: 1em;
+}
+
+/* line 24, ../sass/layout/blocks/_main.scss */
+.date {
+  margin: 1em;
+  clear: both;
+}
+
+/* line 28, ../sass/layout/blocks/_main.scss */
+.bottom {
+  margin: 1em;
+}
+
+/* line 31, ../sass/layout/blocks/_main.scss */
+.add {
+  display: inherit;
+  margin: 1em;
+}
+/* line 34, ../sass/layout/blocks/_main.scss */
+.add a {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* line 39, ../sass/layout/blocks/_main.scss */
+.serial-list h1 {
+  text-align: center;
+}
+
 /* line 1, ../sass/base/typography/_base.scss */
 html {
   font-family: LoraRegular;
@@ -265,149 +329,6 @@ html.js input.throbbing {
   background-image: url(../../../../../misc/throbber-active.gif);
   background-position: 100% center;
   /* LTR */
-}
-
-/* line 1, ../sass/base/_paragraphs.scss */
-.entity-paragraphs-item {
-  padding-bottom: 60px;
-}
-/* line 2, ../sass/abstract/abstractions/_clear.scss */
-.entity-paragraphs-item:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-/* line 6, ../sass/base/_paragraphs.scss */
-.entity-paragraphs-item .field--name-field-paragraph-heading p {
-  margin-top: 0;
-}
-@media (max-width: 767px) {
-  /* line 12, ../sass/base/_paragraphs.scss */
-  .entity-paragraphs-item .content > div {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    clear: both;
-    float: none;
-  }
-  /* line 2, ../sass/abstract/abstractions/_clear.scss */
-  .entity-paragraphs-item .content > div:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-  }
-  /* line 18, ../sass/base/_paragraphs.scss */
-  .entity-paragraphs-item .content > div .paragraphs-item-paragraph-quote {
-    margin-top: 0;
-  }
-  /* line 20, ../sass/base/_paragraphs.scss */
-  .entity-paragraphs-item .content > div .paragraphs-item-paragraph-quote .content {
-    width: 61.29032%;
-    float: left;
-    margin-right: 0;
-    clear: both;
-    text-align: right;
-  }
-  /* line 2, ../sass/abstract/abstractions/_clear.scss */
-  .entity-paragraphs-item .content > div .paragraphs-item-paragraph-quote .content:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-  }
-  /* line 26, ../sass/base/_paragraphs.scss */
-  .entity-paragraphs-item .content > div .paragraphs-item-paragraph-quote .content .field--name-field-paragraph-quote-text {
-    text-align: left;
-  }
-  /* line 32, ../sass/base/_paragraphs.scss */
-  .entity-paragraphs-item .paragraphs-items-field-paragraph-list-full {
-    margin-top: 3em;
-  }
-  /* line 35, ../sass/base/_paragraphs.scss */
-  .entity-paragraphs-item .paragraphs-items-field-paragraph-list-full > .field--name-field-paragraph-list > .field__items > .even {
-    width: 48.3871%;
-    float: left;
-    margin-right: 3.22581%;
-    padding-bottom: 1em;
-  }
-}
-@media (max-width: 767px) and (max-width: 480px) {
-  /* line 35, ../sass/base/_paragraphs.scss */
-  .entity-paragraphs-item .paragraphs-items-field-paragraph-list-full > .field--name-field-paragraph-list > .field__items > .even {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-@media (max-width: 767px) {
-  /* line 42, ../sass/base/_paragraphs.scss */
-  .entity-paragraphs-item .paragraphs-items-field-paragraph-list-full > .field--name-field-paragraph-list > .field__items > .odd {
-    width: 48.3871%;
-    float: left;
-    margin-right: 0;
-    padding-bottom: 1em;
-  }
-}
-@media (max-width: 767px) and (max-width: 480px) {
-  /* line 42, ../sass/base/_paragraphs.scss */
-  .entity-paragraphs-item .paragraphs-items-field-paragraph-list-full > .field--name-field-paragraph-list > .field__items > .odd {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 54, ../sass/base/_paragraphs.scss */
-  .paragraphs-item-paragraph-copy-right-and-quote .entity-paragraphs-item.paragraphs-item-paragraph-quote .content {
-    float: left;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 64, ../sass/base/_paragraphs.scss */
-  .paragraphs-item-paragraph-copy-left-and-quote .entity-paragraphs-item.paragraphs-item-paragraph-quote {
-    float: right;
-  }
-}
-
-/* line 72, ../sass/base/_paragraphs.scss */
-.entity-paragraphs-item:last-of-type {
-  padding-bottom: 0;
-}
-
-/* line 78, ../sass/base/_paragraphs.scss */
-.field--name-field-paragraph-heading {
-  font-style: normal;
-  font-weight: bold;
-  color: #f06523;
-  font-size: 26px;
-  border-bottom: 4px solid;
-  padding-bottom: 0.4em;
-  padding-left: 6%;
-  margin-left: -6%;
-  width: 50%;
-  margin-bottom: 25px;
-}
-@media (max-width: 767px) {
-  /* line 78, ../sass/base/_paragraphs.scss */
-  .field--name-field-paragraph-heading {
-    font-size: 24px;
-  }
-}
-@media (max-width: 480px) {
-  /* line 78, ../sass/base/_paragraphs.scss */
-  .field--name-field-paragraph-heading {
-    font-size: 22px;
-  }
 }
 
 /* line 1, ../sass/base/_iframes.scss */
