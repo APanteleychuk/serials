@@ -9,15 +9,30 @@
   </head>
 
   <body class="front">
-    <header class="header">    </header>
-
-    <main class="main">
-      <h2>
+  <div class="header">
+      <span class="left">
         <a href="<?php echo HOME_URL?>/index.php?action=login_view">Login</a>
-      </h2>
-    </main>
+      </span>
+      <span class="right">
+        <a href="<?php echo HOME_URL?>/index.php?action=logout">Logout</a>
+      </span>
+    <div class="title"><h1>Test Task</h1></div>
+  </div>
+  <div class="content">
+    <div id="serials">
+      <h2>Serials</h2>
+      <?php foreach ($serials['data'] as $serial) : ?>
+      <a href="<?php echo HOME_URL . '/index.php?action=serial_view&serial_id='. $serial['id'] ?>">
+      <div class="serial">
+          <div class="logo"><img src="<?php echo HOME_URL . '/uploads/logos/' . $serial['logo'] ?>" alt=""/></div>
+          <div class="title"><h2><?php echo $serial['title'] ?></h2></div>
+      </div>
+      <?php endforeach; ?>
+      </a>
+    </div>
 
     <footer class="footer" ></footer>
+    </div>
   </body>
 
 

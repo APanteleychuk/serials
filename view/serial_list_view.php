@@ -21,14 +21,15 @@
       <div class="date">Date start serial <?php echo $serial['date'] ?></div>
       <div class="button"><a href="<?php echo HOME_URL . '/index.php?action=add_serial_view&serial_id=' . $serial['id'] ?>">Edit Serial</a></div>
       <div class="button"><a href="<?php echo HOME_URL . '/index.php?action=delete_serial&serial_id=' . $serial['id'] ?>">Delete Serial</a></div>
+      <div class="button"><a href="<?php echo HOME_URL . '/index.php?action=add_season_view&serial_id=' . $serial['id'] ?>">+ Add season</a></div>
       <?php $seasons = $this->get_season($serial['id']) ?>
       <div class="season">
         <h3> Seasons</h3>
-        <div class="button"><a href="<?php echo HOME_URL . '/index.php?action=add_season_view&serial_id=' . $serial['id'] ?>">+ Add season</a></div>
         <?php foreach ($seasons['data'] as $season) : ?>
         <div class="number">
           <span>Season#<?php echo $season['number'] ?></span>
           <a href="<?php echo HOME_URL . '/index.php?action=delete_season&season_id=' . $season['id'] ?>">Delete </a>
+          <a href="<?php echo HOME_URL . '/index.php?action=add_season_view&season_id=' . $season['id'] ?>">Edit </a>
         </div>
         <?php $episodes = $this->get_episode($season['id']) ?>
         <?php foreach ($episodes['data'] as $episode) : ?>

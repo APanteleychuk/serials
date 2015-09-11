@@ -18,36 +18,28 @@
   visibility: hidden;
 }
 
-/* line 1, ../sass/layout/blocks/_main.scss */
-.serial {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* line 4, ../sass/layout/blocks/_main.scss */
+/* line 2, ../sass/layout/blocks/_main.scss */
 .title {
   margin-left: 1em;
 }
-/* line 6, ../sass/layout/blocks/_main.scss */
+/* line 4, ../sass/layout/blocks/_main.scss */
 .title h2 {
   margin-bottom: 0;
 }
 
-/* line 10, ../sass/layout/blocks/_main.scss */
+/* line 8, ../sass/layout/blocks/_main.scss */
 .logo img {
   width: 200px;
   height: auto;
 }
 
-/* line 14, ../sass/layout/blocks/_main.scss */
+/* line 12, ../sass/layout/blocks/_main.scss */
 .logo {
   float: left;
   margin: 1em;
 }
 
-/* line 18, ../sass/layout/blocks/_main.scss */
+/* line 16, ../sass/layout/blocks/_main.scss */
 .description {
   width: 65%;
   float: left;
@@ -55,31 +47,127 @@
   margin: 1em;
 }
 
-/* line 24, ../sass/layout/blocks/_main.scss */
+/* line 22, ../sass/layout/blocks/_main.scss */
 .date {
   margin: 1em;
   clear: both;
 }
 
-/* line 28, ../sass/layout/blocks/_main.scss */
+/* line 26, ../sass/layout/blocks/_main.scss */
 .bottom {
   margin: 1em;
 }
 
-/* line 31, ../sass/layout/blocks/_main.scss */
+/* line 29, ../sass/layout/blocks/_main.scss */
 .add {
   display: inherit;
   margin: 1em;
 }
-/* line 34, ../sass/layout/blocks/_main.scss */
+/* line 32, ../sass/layout/blocks/_main.scss */
 .add a {
   font-weight: bold;
   font-size: 22px;
 }
 
-/* line 39, ../sass/layout/blocks/_main.scss */
-.serial-list h1 {
+/* line 38, ../sass/layout/blocks/_main.scss */
+h1 {
   text-align: center;
+}
+
+/* line 42, ../sass/layout/blocks/_main.scss */
+.front .serial {
+  width: 31.42857%;
+  float: left;
+  margin-right: 2.85714%;
+}
+/* line 44, ../sass/layout/blocks/_main.scss */
+.front .serial .title {
+  text-align: center;
+}
+/* line 48, ../sass/layout/blocks/_main.scss */
+.front .serial .logo {
+  float: none;
+}
+/* line 52, ../sass/layout/blocks/_main.scss */
+.front .serial h2 {
+  text-align: center;
+}
+
+/* line 58, ../sass/layout/blocks/_main.scss */
+.front h2 {
+  text-align: center;
+}
+
+/* line 63, ../sass/layout/blocks/_main.scss */
+.content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
+/* line 70, ../sass/layout/blocks/_main.scss */
+.front .title {
+  margin-left: 0;
+}
+
+/* line 75, ../sass/layout/blocks/_main.scss */
+.header {
+  background-color: #f06523;
+  color: #ffffff;
+}
+/* line 78, ../sass/layout/blocks/_main.scss */
+.header h1, .header a {
+  font-weight: bold;
+  font-family: LoraBold;
+  color: #ffffff;
+}
+/* line 83, ../sass/layout/blocks/_main.scss */
+.header h1 {
+  margin-top: 0;
+  padding: 1em;
+}
+/* line 87, ../sass/layout/blocks/_main.scss */
+.header .left {
+  font-size: 20px;
+  margin: 54px;
+  float: left;
+}
+/* line 92, ../sass/layout/blocks/_main.scss */
+.header .right {
+  font-size: 20px;
+  margin: 54px;
+  float: right;
+}
+
+/* line 100, ../sass/layout/blocks/_main.scss */
+.one-serial .title {
+  background-color: #f06523;
+}
+/* line 103, ../sass/layout/blocks/_main.scss */
+.one-serial h1 {
+  color: #ffffff;
+}
+
+/* line 109, ../sass/layout/blocks/_main.scss */
+.front #serials a {
+  display: block;
+}
+
+/* line 115, ../sass/layout/blocks/_main.scss */
+#serials .serial:nth-last-of-type(3n) {
+  margin-right: 0;
+}
+
+/* line 118, ../sass/layout/blocks/_main.scss */
+.front .serial {
+  margin-right: 0;
+}
+
+/* line 121, ../sass/layout/blocks/_main.scss */
+.logo img {
+  width: 100%;
+  height: 100%;
 }
 
 /* line 1, ../sass/base/typography/_base.scss */

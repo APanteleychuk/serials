@@ -1,6 +1,4 @@
-.serial {
-  @include span(8 of 8);
-}
+
 .title{
   margin-left: 1em;
   h2 {
@@ -36,6 +34,92 @@
     font-size: 22px;
   }
 }
-.serial-list h1{
+
+h1 {
   text-align: center;
 }
+
+.front .serial {
+  @include span (3 of 9);
+  .title {
+    text-align: center;
+  }
+
+  .logo {
+    float: none;
+
+  }
+  h2 {
+    text-align: center;
+  }
+
+}
+.front {
+  h2{
+    text-align: center;
+  }
+}
+
+.content {
+
+  max-width: 860px;
+  margin: 0 auto;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+.front .title {
+  margin-left: 0;
+
+
+}
+.header {
+  background-color: #f06523;
+  color: #ffffff;
+  h1, a {
+    font-weight: bold;
+    font-family: LoraBold;
+    color: #ffffff;
+  }
+  h1 {
+    margin-top: 0;
+    padding: 1em;
+  }
+  .left {
+    font-size: 20px;
+    margin: 54px;
+    float: left;
+  }
+  .right {
+    font-size: 20px;
+    margin: 54px;
+    float: right;
+  }
+}
+
+.one-serial {
+  .title {
+  background-color:#f06523;
+}
+  h1 {
+    color: #ffffff;
+  }
+
+}
+
+.front #serials a {
+
+    display:block;
+
+}
+
+#serials .serial:nth-last-of-type(3n) {
+  margin-right: 0;
+}
+.front .serial {
+  margin-right: 0;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+

@@ -10,7 +10,7 @@
 
 <body>
 <h1>Add serial</h1>
-<!--<form action="--><?php //echo HOME_URL ?><!--/index.php?action=add_serial" method="post" enctype="multipart/form-data">-->
+
 <form action="<?php echo HOME_URL ?>/index.php?action=<?php echo empty($serial)?'add_serial':'update_serial&serial_id='.$serial['data'][0]['id']?>" method="post" enctype="multipart/form-data">
   <span>Name Serial</span>
   <input type="text" name="title" value="<?php echo isset($serial['data'][0]['title']) ? $serial['data'][0]['title'] : '' ?>"/></br>

@@ -11,10 +11,11 @@
 <body>
 <h1>Add season</h1>
 <form action="<?php echo HOME_URL?>/index.php?action=add_season" method="post">
-  <span>Season Number</span><input type="text" name="number"/></br>
-  <span>Date start <serial></serial></span><input type="date" name="date_start"/></br>
-  <span>Date finish <serial></serial></span><input type="date" name="date_finish"/></br>
-  <input type="hidden" name="serial_id" value="<?php echo $_GET['serial_id']?>">
+  <span>Season Number</span><input type="text" value="<?php echo isset($season['data'][0]['number'])? $season['data'][0]['number']: ''?>" name="number"/></br>
+  <span>Date start </span><input type="date" value="<?php echo isset($season['data'][0]['date_start'])? $season['data'][0]['date_start']: ''?>" name="date_start"/></br>
+  <span>Date finish </span><input type="date" value="<?php echo isset($season['data'][0]['date_finish'])? $season['data'][0]['date_finish']: ''?>" name="date_finish"/></br>
+  <input type="hidden" name="serial_id" value="<?php echo !isset($_GET['season_id'])? $_GET['serial_id']:''?>">
+  <input type="hidden" name="season_id" value="<?php echo isset($_GET['season_id'])? $_GET['season_id']:''?>">
   <input type="submit" value="add"/>
 
 </form>
